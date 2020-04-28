@@ -21,7 +21,7 @@ jobs:
           path: ~/.gradle
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
       - name: Run Unit tests
-        run: bash ./gradlew test
+        run: bash ./gradlew testDebug
 
   lint:
     name: Run lints
