@@ -11,6 +11,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initView()
+    }
+
+    private fun initView() {
         button_click_me.setOnClickListener {
             text_main.text = textReverser.reverse(text_main.text.toString())
         }
